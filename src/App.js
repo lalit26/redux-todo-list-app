@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+
+import CreatePost from "./components/CreatePost"
+import AllPosts from "./components/AllPosts"
+
+import "./App.css"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <CreatePost />
+      <AllPosts />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
